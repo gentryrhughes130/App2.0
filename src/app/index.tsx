@@ -8,8 +8,8 @@ import { Alert, PanResponder, Platform, Pressable, ScrollView, StyleSheet, View 
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ThemedText } from '@/components/themed-text';
-import { BottomTabInset, MaxContentWidth } from '@/constants/theme';
 import { builtInSkins, ResonXSkin } from '@/constants/skins';
+import { BottomTabInset, MaxContentWidth } from '@/constants/theme';
 
 const tracks = [
   { title: 'Night Drive', artist: 'Chromatic Avenue', duration: '04:18', type: 'FLAC' },
