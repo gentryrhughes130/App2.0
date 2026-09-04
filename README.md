@@ -43,6 +43,25 @@ This command will move the starter code to the **app-example** directory and cre
 
 ## Learn more
 
+## Container image
+
+The web build is packaged as an Nginx container and published automatically to GitHub Container Registry from pushes to `main` and version tags.
+
+Build and run it locally:
+
+```bash
+docker build -t resonx-web .
+docker run --rm -p 8080:80 resonx-web
+```
+
+The published image is available at:
+
+```text
+ghcr.io/gentryrhughes130/app2.0:latest
+```
+
+The workflow uses the repository `GITHUB_TOKEN`; no personal access token is required in GitHub Actions. The first package publication may default to private until its package visibility is changed in GitHub.
+
 To learn more about developing your project with Expo, look at the following resources:
 
 - [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
